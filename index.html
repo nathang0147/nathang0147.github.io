@@ -2,88 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Developer</title>
     
-    <!-- SEO tag -->
-    <meta name="description" content="Junior Frontend Developer">
-    <meta name="keyword" content="HTML, CSS, JS, JavaScript, CV">
-    <meta name="author" content="Thang">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- OG -->
-    <meta property="og:title" content="Thang - Vippro Developer">
-    <meta property="og:description" content="Explore my CV, skills">
-    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvn.pikbest.com%2Fpng-images%2Fangry-ninja-turtle-mascot%252C-sport-esport-logo-template-vector-graphic-element_1522287.html&psig=AOvVaw1y6LYIJ55JPc8yDz5nspRJ&ust=1740632349757000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDV2PbG4IsDFQAAAAAdAAAAABAE">
-    <meta property="og:link" content="https://hcmiu.edu.vn/">
-    <meta property="og:type" content="website" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Junior Frontend Developer</p>
-        <p>123 Your Street, Your City, ST 12345</p>
-        <p>(123) 456-7890</p>
-        <p>no_reply@example.com</p>
-    </header>
+<body data-bs-theme="light">
 
-    <main>
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Accessibility</li>
-                <li>Figma to Design</li>
-                <li>Responsive Web Design</li>
-                <li>Technical Writing</li>
-                <li>Presentation</li>
-            </ul>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <article>
-                <h3>HCMIU, VN</h3>
-                <p><strong>Degree:</strong> BSc Computer Science</p>
-                <p><time datetime="20XX-XX">Month 20XX</time> - <time datetime="20XX-XX">Month 20XX</time></p>
-                <p>Key subjects: Web Development, UX/UI Design, Programming</p>
-            </article>
-        </section>
-
-        <section class="experience">
-            <h2>Experience</h2>
-            <article>
-                <h3>Company Name, Location</h3>
-                <p><strong>Job Title:</strong> Frontend Developer</p>
-                <p><time datetime="20XX-XX">Month 20XX</time> - <time datetime="20XX-XX">Month 20XX</time></p>
-                <ul>
-                    <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
-                    <li>Collaborated with UX designers to create accessible web components.</li>
-                    <li>Optimized websites for better SEO and page performance.</li>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Nguyen Anh Thang</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-            </article>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Portfolio Website</h3>
-                <p>Developed a personal portfolio showcasing projects, blog posts, and skills.</p>
-                <p><a href="#" target="_blank" rel="noopener noreferrer">View Project</a></p>
-            </article>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center my-4">
+        <h1 class="fw-bold">Frontend Developer</h1>
+        <p class="text-muted">html only with proper layout, now fully styled</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row g-4">
+            <!-- Projects -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header fw-bold">Projects</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">HTML Only Portfolio</li>
+                        <li class="list-group-item">Calculator</li>
+                        <li class="list-group-item">Quiz App</li>
+                        <li class="list-group-item">Countdown Timer</li>
+                        <li class="list-group-item">Product Upcoming Page</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Work Experience & Open Source Work -->
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Work Experience</h5>
+                        <p><strong>roadmap.sh</strong> - Solved all frontend projects</p>
+                        <a href="#" class="btn btn-primary btn-sm">Visit my Profile</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Open Source Work</h5>
+                        <p>Contributed to 50 opensource projects with 200+ GitHub Stars.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Visit my GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Education</h5>
+                        <p>Graduated with 3.76 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                        <h6 class="mt-3">Courses I took:</h6>
+                        <ul class="list-unstyled">
+                            <li>Object-Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Engineering</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <section class="text-center my-5">
+            <h2>Reviews from my Teachers</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <p>John Doe was a brilliant student.</p>
+                        <p class="fw-bold">Jane Doe</p>
+                        <p class="text-muted">Assistant Professor</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <p>John Doe was a brilliant student.</p>
+                        <p class="fw-bold">Jane Doe</p>
+                        <p class="text-muted">Assistant Professor</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <p>John Doe was a brilliant student.</p>
+                        <p class="fw-bold">Jane Doe</p>
+                        <p class="text-muted">Assistant Professor</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="internet">
-            <h2>Across the Internet</h2>
-            <p>Add your LinkedIn, GitHub profile links</p>
+        <!-- Contact Form -->
+        <section class="my-5">
+            <h2 class="text-center">Contact Me</h2>
+            <div class="card shadow-sm p-4">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send</button>
+                </form>
+            </div>
         </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <time datetime="2025">2025</time> Thang. All rights reserved.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 border-top">
+        <p>© all rights reserved 2025</p>
+        <button class="btn btn-sm btn-dark" id="toggleDarkMode">Toggle Dark Mode</button>
     </footer>
+
+    <!-- Bootstrap & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggleDarkMode').addEventListener('click', function() {
+            document.body.dataset.bsTheme = document.body.dataset.bsTheme === 'light' ? 'dark' : 'light';
+        });
+    </script>
 </body>
 </html>
